@@ -172,16 +172,16 @@ powerbi/bike_sharing_dashboard.pbix
 ## 📸 Dashboard Preview
 
 ### Demand Overview
-![Demand Overview](outputs/figures/average_rentals_by_hour.png)
+![Demand Overview](./outputs/figures/average_rentals_by_hour.png)
 
 ### Monthly Trends
-![Monthly Trends](outputs/figures/monthly_rental_trend.png)
+![Monthly Trends](./outputs/figures/monthly_rental_trend.png)
 
 ### Model Performance
-![Model Performance](outputs/figures/ml_actual_vs_predicted_monthly.png)
+![Model Performance](./outputs/figures/ml_actual_vs_predicted_monthly.png)
 
 ### Feature Importance
-![Feature Importance](outputs/figures/random_forest_feature_importance.png)
+![Feature Importance](./outputs/figures/random_forest_feature_importance.png)
 
 ---
 
