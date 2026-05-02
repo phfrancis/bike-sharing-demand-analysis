@@ -1,40 +1,44 @@
 # 🚲 Bike Sharing Demand Analysis
 
+A complete end-to-end data project demonstrating how feature engineering, SQL analysis, machine learning, and business intelligence can be combined to understand and predict bike rental demand.
+
+---
+
 ## 📌 Project Overview
 
-This project analyzes and predicts bike rental demand using an end-to-end data workflow that combines:
+This project analyzes and predicts bike rental demand using an integrated workflow built on:
 
-- **Python (Pandas, NumPy, Matplotlib)**
-- **SQL (SQLite)**
-- **Machine Learning (Scikit-learn)**
-- **Business Intelligence (Power BI)**
+- Python (Pandas, NumPy, Matplotlib)
+- SQL (SQLite)
+- Machine Learning (Scikit-learn)
+- Business Intelligence (Power BI)
 
-The objective is to uncover demand patterns and build predictive models using historical bike-sharing data, with a strong focus on **time-based feature engineering** and **interpretability**.
+The focus is on uncovering temporal demand patterns and improving predictive performance through time-based feature engineering and interpretable modeling.
 
 ---
 
 ## 📊 Key Components
 
 ### 🔹 1. Data Cleaning
-- Loaded and cleaned raw hourly bike rental data
-- Renamed columns for clarity and consistency
-- Created categorical labels:
+- Processed raw hourly bike rental data
+- Standardized and renamed columns for clarity
+- Created categorical variables:
   - Season
   - Weather condition
   - Day type (working vs non-working)
-- Generated additional date-based features (month, weekday, etc.)
+- Engineered additional time-based features (month, weekday, etc.)
 
 ---
 
 ### 🔹 2. Exploratory Data Analysis
-Analyzed demand patterns across multiple dimensions:
+Analyzed demand patterns across key dimensions:
 
-- **Hour of Day** → strong commute peaks (morning & evening)
-- **Season** → highest demand in fall, lowest in spring
-- **Weather** → highest usage in clear conditions
-- **Working vs Non-Working Days** → slightly higher weekday demand
+- Hour of Day → strong morning and evening commute peaks  
+- Season → highest demand in fall, lowest in spring  
+- Weather → highest usage in clear conditions  
+- Working vs Non-Working Days → slightly higher weekday demand  
 
-Visual outputs include:
+Visualizations include:
 - Line plots  
 - Bar charts  
 - Heatmaps  
@@ -48,7 +52,7 @@ Visual outputs include:
 - Linear Regression  
 - Decision Tree Regressor  
 - Random Forest Regressor  
-- Mean Baseline (for comparison)  
+- Mean Baseline (benchmark)  
 
 #### Feature Engineering:
 - Lag features:
@@ -68,14 +72,14 @@ Visual outputs include:
 ---
 
 ### 🔹 4. SQL Analysis
-- Built a **SQLite database** from cleaned data  
-- Wrote analytical queries for:
+- Built a SQLite database from cleaned data  
+- Performed analytical queries for:
   - Rentals by hour  
   - Rentals by season  
   - Rentals by weather  
   - Working vs non-working demand  
   - Monthly trends  
-  - Top 10 highest demand periods  
+  - Top demand periods  
 
 ---
 
@@ -83,29 +87,29 @@ Visual outputs include:
 
 Interactive dashboard includes:
 
-- **Demand Overview**  
-- **Monthly Trends**  
-- **Model Performance Comparison**  
-- **Feature Importance Analysis**  
-- **Drillthrough Page (Season-Level Deep Dive)**  
+- Demand Overview
+- Monthly Trends
+- Model Performance Comparison
+- Feature Importance Analysis
+- Drillthrough Page (Season-Level Analysis)
 
 ---
 
 ## 📈 Key Insights
 
-- Bike rental demand is **highly time-dependent**  
-- **Lag features dominate** both correlation and model importance  
-- Weather impacts demand but plays a **secondary role**  
-- Linear Regression achieved the **best performance** after feature engineering  
-- Demand follows strong **daily and weekly cycles**  
+- Bike rental demand is highly time-dependent
+- Lag features dominate both correlation and model importance
+- Weather impacts demand but plays a secondary role
+- Linear Regression achieved the best performance after feature engineering
+- Demand exhibits strong daily and weekly cyclical patterns
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python**: Pandas, NumPy, Matplotlib, Scikit-learn  
-- **SQL**: SQLite  
-- **BI Tool**: Power BI  
+- Python: Pandas, NumPy, Matplotlib, Scikit-learn  
+- SQL: SQLite  
+- BI Tool: Power BI  
 
 ---
 
@@ -161,9 +165,9 @@ python notebooks/04_sql_analysis.py
 
 ## 📊 Dashboard
 
-To explore the interactive dashboard:
+Open the Power BI dashboard file:
 
-```bash
+```
 powerbi/bike_sharing_dashboard.pbix
 ```
 
@@ -193,4 +197,4 @@ powerbi/bike_sharing_dashboard.pbix
 
 ## 🚀 Key Takeaway
 
-This project demonstrates that **feature engineering—especially time-based features—is more impactful than model complexity** in predicting bike rental demand.
+This project demonstrates that feature engineering—especially time-based features—has a greater impact on predictive performance than increasing model complexity, highlighting the importance of domain-aware feature design in time-series problems.
